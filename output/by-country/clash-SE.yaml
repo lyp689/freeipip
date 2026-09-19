@@ -18,8 +18,8 @@ proxies:
   client-fingerprint: chrome
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
-  server: 138.124.25.250
-  port: 443
+  server: 84.32.217.120
+  port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -27,7 +27,7 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /channels/act
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
