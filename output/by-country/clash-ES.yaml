@@ -15,7 +15,7 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: shuma.ccwu.cc
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
@@ -34,17 +34,63 @@ proxies:
       Host: shuma.ccwu.cc
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   type: vless
-  server: 95.182.93.92
-  port: 58582
-  uuid: 0ca2dfa0-c6fb-47d6-94de-1f35b95bbb0b
+  server: 195.133.92.20
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: zcIOzb_4k_qiXl_Q-7H77H2ZuA-hKerL-KZd_xFhtV0
-  servername: goo.gl
-  client-fingerprint: chrome
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  type: vless
+  server: 152.114.195.163
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
+  type: vmess
+  server: mygptagent.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mygptagent.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
+- name: 🇪🇸 西班牙 (Spain) 08 - xiaohe
   type: vless
   server: 195.133.92.20
   port: 443
@@ -67,6 +113,10 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
   - 🇪🇸 西班牙 (Spain) 03 - xiaohe
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 06 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,5 +126,9 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
   - 🇪🇸 西班牙 (Spain) 03 - xiaohe
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 06 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 08 - xiaohe
 rules:
 - MATCH,PROXIES
